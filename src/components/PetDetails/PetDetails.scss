@@ -1,0 +1,8 @@
+.pet-details {
+  display: grid;
+  max-width: 30rem;
+  margin: 5rem auto;
+  &--link {
+    text-align: center;
+  }
+}

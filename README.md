@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pet Weather App - Owl Labs Technical Assessment
+A React application that leverages react, graphql to access an associated Postgres database and the ForecastIO API. `@apollo/react-hooks` provider the experience for communicating with the API.
 
-## Available Scripts
+## See It Live
+[Pet Weather](https://js-pet-weather.herokuapp.com/) on Heroku
+[Pet Shelter API - Graphiql](http://js-petshelterapi.herokuapp.com/) on Heroku
 
-In the project directory, you can run:
+## Primary Client Side Technologies Used
+* React
+* React Router
+* Apollo 
+* React Hook Form
+* Node Sass
 
-### `npm start`
+## API and Server
+* Node
+* Express
+* Knex
+* GraphQL
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Next Steps
+### Additional enhancements could include:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* More robust styling
+* Additional validation for new pets i.e(latitude, longitude, and location validation)
+* The ability to edit a pet
+* Animation using [lottie](https://airbnb.io/lottie/#/) from AirBnb
+* Metrics through Google Analytics - checking visit, bounce rates, and clicks
+ 
+## Set Up
+### Client
+Clone the repo
 
-### `npm test`
+Run ```npm install``` from the root directory
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run ```npm start``` and visit [localhost:3000](https://www.localhost:3000) in your browser
 
-### `npm run build`
+## API and Server
+Clone the associated [back-end repo](https://github.com/jeremiahjstanley/pet-shelter-api)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run ```npm install``` from the root directory
+Provision Postgres database ```$ psql CREATE DATABASE pet_shelter```
+Run Migration ```knex migrate:latest```
+Seed Database```knex seed:run```
+Run ```npm start``` from the root directory
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Issues 
+For issues on the production version of this app [Pet Weather](https://js-pet-weather.herokuapp.com/), please create an [issue](https://github.com/jeremiahjstanley/pet-shelter-api/issues)

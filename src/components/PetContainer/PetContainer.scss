@@ -1,0 +1,14 @@
+.pet-container {
+  display: grid;
+  gap: 2rem;
+  &--header {
+    justify-self: center;
+    padding: 1rem 0;
+  }
+  &--cards {
+    display: grid;
+  }
+  &--link {
+    justify-self: center;
+  }
+}

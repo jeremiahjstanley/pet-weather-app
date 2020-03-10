@@ -1,0 +1,29 @@
+.success-message {
+  max-width: 30rem;
+  margin: 5rem auto;
+  &--text {
+    padding-left: 2rem;
+  }
+  &--link {
+    text-align: center;
+  }
+}
+
+.add-new-pet-header {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.add-new-pet-form {
+  max-width: 30rem;
+  display: grid;
+  grid-auto-flow: row;
+  margin: 1rem auto;
+  &--field {
+    margin-bottom: 1rem;
+  }
+  &--link {
+    justify-self: center;
+    margin-top: 1rem;
+  }
+}
